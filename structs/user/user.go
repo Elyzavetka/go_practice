@@ -22,7 +22,7 @@ func (user *User) ClearUserName() {
 	user.lastName = ""
 }
 
-func NewUser(firstName, lastName, birthdate string) (*User, error) {
+func New(firstName, lastName, birthdate string) (*User, error) {
 	if firstName == "" || lastName == "" || birthdate == "" {
 		return nil, errors.New("firstName, lastName, birthdate are required.")
 	}
